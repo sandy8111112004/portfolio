@@ -2,7 +2,27 @@
 body{
     background-image:url('assets/bckgrnd.png');
     text-align: justify;
-    margin: 0px;
+    line-height: 1.5;
+    height: 98vh;
+    display: grid;
+    /*grid-template-columns: 1fr;
+    grid-template-rows: 1fr 85vh;*/
+}
+main{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*grid-column: span 1;
+    grid-row: span 1;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 100px) 1fr;
+    align-items: center;
+    justify-content: center;
+    /*height: 90%;*/
+
+
 }
 aside{
     background-color: rgba(150,150,150,0.6);
@@ -12,32 +32,139 @@ aside{
     color: #333333;
 }
 
+.center{
+    display: grid;
+    justify-items: center;
+}
+nav img{
+    position: relative;
+    left: 25%;
+    margin-right: 20px;
+}
+
+img.mobile{
+    position: relative;
+    left: 35%;
+}
 
 /*font style*/
 h1, h2, h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 20px;
+}
 .bold{
     font-weight: 900;
 }
 p{
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+#profile_pic{
+    border: 3px solid #2c5fa8;
+    object-fit: cover;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
 }
 
+.desktop {
+    display: none;
+}
+.bottom {
+    display: grid;
+   /* grid-row: span 1;
+    grid-column: span 1;*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(3, 1fr) 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+}
+.box {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.bottom img.box{
+    display: grid;
+    width: 70%;
+    margin: 20px;
+}
+/*
+.img_bottom{
+    display: grid;
+    justify-items: center;
+}*/
+aside div h2{
+    border-bottom:2px solid white;
+    height:50px;
+}
+footer{
+    border-top:2px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+@media only screen and (min-width:600px){
 /*margin*/
-nav{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50px 200px 1fr;
 }
-main{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.box {
+    grid-row: span 1;
+    grid-column: span 1;
 }
+.des1, .des2 {
+    grid-column: span 2;
+}
+nav img{
+    position: static;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 28px;
+}
+p{
+    font-size: 16px;
+}
+#profile_pic{
+    border: 3px solid #2c5fa8;
+    object-fit: cover;
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+}
+.des5, .des9 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+.des6, .des7, .des8 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
 aside div{
     margin-left: 40px;
     margin-right: 40px;
@@ -47,29 +174,22 @@ aside div{
 nav img{
     margin-right: 40px;
 }
-.bottom img{
+.bottom img.box{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 45px;
-    margin-left: 45px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 80%; 
 }
 
-
+.mobile {
+    display: none;
+}
+.desktop{
+    display: grid;
+}
 /*individual section*/
-#profile_pic{
-    border: 3px solid #2c5fa8;
-    object-fit: cover;
-    width:200px;
-    height:200px;
-    border-radius: 100px;
-}
-aside div h2{
-    border-bottom:2px solid white;
-}
 footer{
-    border-top:2px solid white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif
+    font-size: 16px;
+}
 }
