@@ -32,19 +32,14 @@ aside{
     color: #333333;
 }
 
-.center{
-    display: grid;
-    justify-items: center;
-}
 nav img{
-    position: relative;
-    left: 25%;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-
-img.mobile{
-    position: relative;
-    left: 35%;
+.mobile_center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 /*font style*/
@@ -90,16 +85,19 @@ p{
     grid-row: span 1;
     grid-column: span 1;
 }
-.bottom img.box{
+
+.center {
     display: grid;
-    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomImg{
+    display: grid;
+    width: 80%;
     margin: 20px;
 }
-/*
-.img_bottom{
-    display: grid;
-    justify-items: center;
-}*/
+
 aside div h2{
     border-bottom:2px solid white;
     height:50px;
@@ -126,6 +124,9 @@ main {
 }
 .des1, .des2 {
     grid-column: span 2;
+}
+nav {
+    justify-content: left; 
 }
 nav img{
     position: static;
@@ -161,8 +162,11 @@ p{
     grid-row: span 1;
 }
 .des6, .des7, .des8 {
+    display: grid;
     grid-column: span 1;
     grid-row: span 1;
+    align-items: center;
+    justify-content: center;
 }
 
 aside div{
@@ -171,15 +175,16 @@ aside div{
     margin-top: 40px;
     padding-bottom: 40px;
 }
+.mobile_center {
+    display: grid;
+    justify-content: left;
+}
 nav img{
     margin-right: 40px;
 }
-.bottom img.box{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 40px;
-    margin-left: 40px;
-    width: 80%; 
+
+.bottomImg {
+    width: 80%;
 }
 
 .mobile {
