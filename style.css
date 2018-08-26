@@ -5,24 +5,22 @@ body{
     line-height: 1.5;
     height: 98vh;
     display: grid;
-    /*grid-template-columns: 1fr;
-    grid-template-rows: 1fr 85vh;*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 main{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
-    /*grid-column: span 1;
-    grid-row: span 1;*/
+    grid-column: span 1;
+    grid-row: span 1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 120px) 1fr;
     align-items: center;
     justify-content: center;
-    /*height: 90%;*/
-
-
+    height: 90%;
 }
 aside{
     background-color: rgba(150,150,150,0.6);
@@ -73,13 +71,15 @@ p{
 }
 .bottom {
     display: grid;
-   /* grid-row: span 1;
-    grid-column: span 1;*/
+    grid-row: span 1;
+    grid-column: span 1;
     grid-template-columns: 1fr;
     grid-template-rows: 50px repeat(3, 1fr) 50px;
     margin-left: 20px;
     margin-right: 20px;
     align-items: center;
+    grid-gap: 10px;
+    height:90%; 
 }
 .box {
     grid-row: span 1;
@@ -92,16 +92,40 @@ p{
     justify-content: center;
 }
 
-.bottomImg{
+.des6, .des7, .des8 {
     display: grid;
+    background-blend-mode: multiply;
+    cursor:pointer;
+    background-color: #666666;
+    transition: background-color 1s;
+    object-fit: cover;
+    height: 150px;
     width: 80%;
-    margin: 20px;
+}
+.des6 {
+    background-image: url(assets/DSC_0113.JPG);
+}
+.des6:hover {
+    background-color: transparent;
+}
+.des7 {
+    background-image: url(assets/DSC_0113.JPG);
+}
+.des7:hover {
+    background-color: transparent;
+}
+.des8 {
+    background-image: url(assets/DSC_0113.JPG);
+}
+.des8:hover {
+    background-color: transparent;
 }
 
 aside div h2{
     border-bottom:2px solid white;
     height:50px;
 }
+
 footer{
     border-top:2px solid white;
     padding-top: 10px;
@@ -159,7 +183,7 @@ p{
     margin-left: 40px;
     margin-right: 40px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 50px 200px 50px;
 }
 .des5, .des9 {
     grid-column: span 3;
@@ -177,7 +201,7 @@ aside div{
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 40px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 .mobile_center {
     display: grid;
@@ -187,9 +211,6 @@ nav img{
     margin-right: 40px;
 }
 
-.bottomImg {
-    width: 80%;
-}
 
 .mobile {
     display: none;
@@ -197,7 +218,7 @@ nav img{
 .desktop{
     display: grid;
 }
-/*individual section*/
+
 footer{
     font-size: 16px;
 }
