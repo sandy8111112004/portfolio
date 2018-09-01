@@ -101,6 +101,7 @@ p{
     object-fit: cover;
     height: 150px;
     width: 80%;
+    padding: 10px;
 }
 .des6 {
     background-image: url(assets/DSC_0113.JPG);
@@ -135,7 +136,7 @@ footer{
     font-size: 14px;
 }
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:1000px){
 /*margin*/
 main {
     display: grid;
@@ -175,8 +176,8 @@ p{
     height:200px;
     border-radius: 100px;
     position: relative;
-    left: 200px;
-    top: 100px;
+    left: 20%;
+    top: 30%;
 }
 .bottom {
     display: grid;
@@ -195,6 +196,7 @@ p{
     grid-row: span 1;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 aside div{
@@ -222,4 +224,94 @@ nav img{
 footer{
     font-size: 16px;
 }
+}
+
+@media only screen and (min-width:600px) and (max-width:1000px){
+    main {
+        display: grid;
+        margin-left: 40px;
+        margin-right: 40px;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50px 200px 1fr;
+    }
+    .box {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .des1, .des2 {
+        grid-column: span 2;
+    }
+    nav {
+        justify-content: left; 
+    }
+    nav img{
+        position: static;
+        margin-right: 20px;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+    }
+    #profile_pic{
+        border: 3px solid #2c5fa8;
+        object-fit: cover;
+        width:200px;
+        height:200px;
+        border-radius: 100px;
+        position: relative;
+        left: 5%;
+        top: 35%;
+    }
+    .bottom {
+        display: grid;
+        margin-left: 40px;
+        margin-right: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 200px 50px;
+    }
+    .des5, .des9 {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    .des6, .des7, .des8 {
+        display: grid;
+        grid-column: span 1;
+        grid-row: span 1;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    aside div{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .mobile_center {
+        display: grid;
+        justify-content: left;
+    }
+    nav img{
+        margin-right: 40px;
+    }
+    
+    
+    .mobile {
+        display: none;
+    }
+    .desktop{
+        display: grid;
+    }
+    
+    footer{
+        font-size: 16px;
+    }
+    
 }
