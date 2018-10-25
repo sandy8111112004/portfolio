@@ -98,13 +98,13 @@ p, li{
     cursor:pointer;
     background-color: #666666;
     transition: background-color 1s;
-    object-fit: cover;
+    /* object-fit: cover; */
     height: 150px;
-    width: 80%;
+    width: auto;
     padding: 10px;
 }
 .des6 {
-    background-image: url(assets/DSC_0113.JPG);
+    background-image: url(assets/amazonProject.png);
 }
 .des6:hover {
     background-color: transparent;
