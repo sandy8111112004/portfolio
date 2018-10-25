@@ -161,7 +161,7 @@ main {
     display: grid;
     margin-left: 40px;
     margin-right: 40px;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 75% 25%;
     grid-template-rows: 50px 200px 1fr;
 }
 .box {
@@ -184,6 +184,15 @@ h1 {
 }
 h2 {
     font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    font-size: 16px;
 }
 p, li{
     font-size: 16px;
@@ -241,7 +250,7 @@ footer{
         display: grid;
         margin-left: 40px;
         margin-right: 40px;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 75% 25%;
         grid-template-rows: 50px 200px 1fr;
     }
     .box {
@@ -264,6 +273,15 @@ footer{
     }
     h2 {
         font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 16px;
     }
     p, li{
         font-size: 16px;
